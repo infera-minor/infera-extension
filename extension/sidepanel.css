@@ -1,9 +1,11 @@
+/* Base side-panel typography and spacing. */
 body {
     margin: 0;
     padding:15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Vertically groups the header, actions, notes, and generated result. */
 .container {
     display: flex;
     flex-direction: column;
@@ -26,6 +28,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Shared primary-button treatment for extension actions. */
 button {
     padding: 8px 16px;
     background-color: #1a73e8;
@@ -39,6 +42,7 @@ button:hover {
     background-color: #1a73e8;
 }
 
+/* A resizable local-notes editor sized for longer research snippets. */
 .notes textarea {
     width: 100%;
     height: 200px;
@@ -48,6 +52,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/* Neutral container used for a generated summary or an error. */
 #results {
     padding: 10px;
     background-color: #f8f9fa;
