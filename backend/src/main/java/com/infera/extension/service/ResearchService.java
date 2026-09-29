@@ -34,8 +34,7 @@ public class ResearchService {
     }
 
     /**
-     * Converts an extension request to Gemini's request format and returns its
-     * generated text.
+     * Converts an extension request to Gemini's request format and returns its generated text.
      *
      * @param request selected text and requested research operation
      * @return the first generated text response

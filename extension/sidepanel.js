@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function summarizeText() {
-    // Reads the active tab's selected text, then asks the local backend to
-    // summarize it through the configured Gemini API.
+    // Reads the active tab's selected text, then asks the local backend to summarize it through the configured Gemini API.
     try {
         const[tab] = await chrome.tabs.query({ active: true, currentWindow: true})
         const[{ result }] = await chrome.scripting.executeScript({
